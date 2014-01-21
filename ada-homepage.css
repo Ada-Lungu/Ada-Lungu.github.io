@@ -1,0 +1,55 @@
+
+* {font-family: Papyrus;}
+
+body {background-color:#6A5ACD;
+       background-image: url(http://theirondaisywrites.files.wordpress.com/2012/03/education4.jpg);}
+
+#header {position:fixed;
+        margin-top:60px;
+        height:150px;
+        width: 100%;
+        background-color:#00CED1;
+        border-radius:5px;
+        /*border-color:#000000;
+        border-style:solid;
+        border-width:30px;*/
+        border-image: url(http://www.freeimageslive.co.uk/files/images008/english_education.jpg) 40 42 45 fill;
+        font-family:Papyrus;
+        font-size:60px;
+        font-weight:bold;}
+
+
+p {font-size:100;
+   font-family:Papyrus;
+}
+
+div p {font-size:20;
+   font-family:Papyrus;}
+
+#menu {position:fixed;
+       height:50;
+       width:100%;
+       margin-top:2px;
+       font-size:20;
+       font-weight:bold;
+       color:#FFFF00;
+       font-family:Papyrus;
+       border-radius:10px;
+
+     }
+
+#menu li {display:inline;
+          padding:50;
+          color:#FFFF00;
+          text-decoration:none;
+          }
+
+h2 {text-align:center;}
+
+h2 p {text-align:center;}
+
+a:link {color:#000000;
+        text-decoration:none;}
+a:hover {color:#6A5ACD;}
+
+
