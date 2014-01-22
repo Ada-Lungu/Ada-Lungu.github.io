@@ -1,0 +1,23 @@
+
+h1 {font-family: Papyrus;
+    font-size:20;
+    text-decoration:none;
+    color:#FFFF00;
+    font-weight:bold;}
+
+#menu {position:fixed;
+       height:50;
+       width:100%;
+       margin-top:2px;
+       font-size:20;
+       font-weight:bold;
+       color:#FFFF00;
+       font-family:Papyrus;
+       border-radius:10px;}
+
+
+#menu ul li {display:inline;
+          padding:50;
+          color:#FFFF00;
+          text-decoration:none;
+          }
