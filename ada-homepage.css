@@ -56,42 +56,42 @@ body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-h1 {
-    font-size:30px;
-    text-decoration:none;
-    color:#FFFF00;
+#titlu {font-size:25px;
+    color:darkturquoise;
     font-weight:bold;
-    }
+    text-decoration:none;
+    margin-left: 0px;}
 
-
-div p {color:#000000;
-
-   font-size:15px;
-}
-
-h1 p {color:#000000;}
-
-#menu {position:fixed;
-       background-color: red;
-       height:20;
-       width:100%;
-       margin-top:0px;
-       margin-left:10px;
-       border-radius:10px;
-       padding:0px 40px 0px 40px}
-
-ul li {display:inline;
-       /*padding:150;*/
-       color:#000000; /* de ce nu imi face culoarea pe care o dau aici????? */
-
+.menu {
+       position:relative;
+       top:15px;
+       background-color:paleturquoise;
+       height:40;
+       width: 100%;
        font-size:10px;
        font-weight:bold;
        text-decoration:none;
-       margin-right:100px;
-       }
+       border-radius:5px;
+       padding:0px 40px 0px 40px}  /*why this is too long, not in the 12 grid ??? */
+
+.menu ul li {display:inline;
+             margin-right:100px;
+             }
+
+h1 {
+    font-size:40px;
+    text-decoration:none;
+    color:darkturquoise;
+    font-weight:bold;
+    margin-left:85px;
+
+h1 p {color:#000000;}
+
+div p {color:#000000;
+   font-size:15px;
+}
 
 img {width: 100%;
-
      margin-top:0px;}
 
 a:link, a:visited {
@@ -102,5 +102,13 @@ a:link, a:visited {
 
 a:hover {color:red;}
 
+#projects_title {margin-left:350px;}
 
+#projects_description {margin-left:350px}
+
+#projects_description ul li{
+                    font-size: 20px;
+                    margin-right:60px;
+
+                    }
 
