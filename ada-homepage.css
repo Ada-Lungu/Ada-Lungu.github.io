@@ -6,28 +6,8 @@ body {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#titlu_left:{font-size:300px;
-            color:turquoise;
-            font-weight:bold;
-            text-decoration:none;
-            text-align:left;
-            padding-top:35px;
-            padding-bottom:35px;
-            margin-top:20px;
-}
-
-.titlu_left {font-size:35px;
-    color:darkturquoise;
-    font-weight:bold;
-    text-decoration:none;
-    text-align:left;
-    border-width:5px 2px 5px 2px;
-    border-color:transparent;
-    border-style:solid;
-    padding: 7px 5px 7px 5px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    background:rgba(173,255,47,0.9);
+#titlu_site {font-size:50px;
+             text-align:left;
 }
 
 .menu {
@@ -42,8 +22,7 @@ body {
        border-radius:8px;
        padding:30px 0px 10px 0px;
        margin-bottom:20px;
-
-}  /*why this is too long, not in the 12 grid ??? */
+}
 
 .menu ul li {display:inline;
           margin-right:100px;
@@ -52,6 +31,13 @@ body {
           font-size:20px;
 }
 
+
+img {width:100%;
+     height:210px;
+     opacity:0.8;
+}
+
+
 .titlu_middle {font-size:40px;
     text-decoration:none;
     color:darkturquoise;
@@ -59,10 +45,53 @@ body {
     text-align:center;
     padding-top:45px;
     padding-bottom:45px;
+    margin-bottom: 20px;
+    margin-top:20px;
 }
 
-h1 {color:#000000;
+
+.more_button {text-align:left;
+              color:white;
+              font-weight:bold;
+              margin-top:30px;
+              /*background: rgba(124,252,0,0.6); -green+purple */
+              /*background: rgba(0,206,209,0.7); -turquise*/
 }
+
+
+#titlu_left {
+            padding-top:35px;
+            padding-bottom:35px;
+            margin-top:20px;
+}
+
+.titlu_left {font-size:35px;
+    color:darkturquoise;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:left;
+    background:rgba(124,252,0,0.7);
+    margin-top: 110px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 7px;
+    border-radius:5px;
+}
+
+/*h1 {color:#ffffff;
+}*/
+
+
+.projects_title p {text-align:center;
+                 color: #ffffff;
+                 font-size:24px;
+}
+
+
+.titlu_coloane {text-align:center;
+                color: darkturquoise;
+                margin-top:50px;
+}
+
 
 p {color:#ffffff;
    font-size:17px;
@@ -72,45 +101,15 @@ p {color:#ffffff;
    border-radius:3px;
 }
 
-img {width:100%;
-     height:210px;
-     opacity:0.8;
-}
 
-a:link {
-        text-decoration:none;
+a:link {text-decoration:none;
         color:darkturquoise;
         /*font-size:20px;*/
 }
-
 a:visited {text-decoration:none;
            color:purple;
 }
-
 a:hover {color:mediumpurple;
+         font-weight:bold;
 }
 
-h1 #projects_title {text-align:center;
-}
-
-#projects_description p {
-    position:relative;
-    text-align:center;
-    font-size:20px;
-    text-decoration:none;
-}
-
-.center_title {text-align:center;
-               font-size:25px;
-               margin-top:20px;
-}
-
-.titlu_h2 {font-size:18px;
-    text-align:center;
-    color: darkturquoise;
-    margin-top:50px;
-}
-
-ul li {text-align:center;
-       font-size:15px;
-}
