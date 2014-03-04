@@ -1,6 +1,6 @@
 
 body {
-font-family:"Helvetica Neue",sans-serif;  /*"Conv_AvenirLTStd-Book",Sans-Serif;*/
+font-family: "Helvetica Neue",sans-serif;  /*"Conv_AvenirLTStd-Book",Sans-Serif;*/
 font-size: 14px;
 letter-spacing: 1px;
 line-height: 26px;
@@ -36,9 +36,7 @@ line-height: 26px;
 .raw-backinfos {background-color: #808080;
 }
 
-a:hover {text-decoration:none;
 
-}
 
 .navbar-nav li a:link {text-decoration:none;
         color: black;
@@ -54,16 +52,24 @@ a:hover {text-decoration:none;
 
 .text-block-projects {background:rgba(193,205,205,0.5);
                       height:300px;
+                      padding:8px 8px 0px 8px;
+                      text-align:center;
+                      margin-top: 10px;
+                      color: steelblue;
+                      border-radius:2px;
 }
 
-.btn-default-more-info {font-weight: bold;
-                        font-size: 20px;
+.text-block {color: greenyellow;
+}
+
+.btn-default-more-info {
+                        font-size: 16px;
                         text-align:left;
                         margin-bottom:100px;
 }
 
 .titlu_middle {text-align:center;
-    font-size:40px;
+    font-size:25px;
     text-decoration:none;
     color: #808080;
     text-align:center;
@@ -82,10 +88,37 @@ a:hover {text-decoration:none;
 .member-text {text-align: center;
 }
 
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 400px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+
+.carousel-caption .text-slide {font-family: Great Vibes;
+}
+
+.col-md-6-vision {text-align: center;
+}
+
+.col-md-6-vision p {line-height:100%;
+}
+
+a:hover {text-decoration:none;
+         color:darkviolet;
+}
+
+a:visited {color: greenyellow;
+}
+
+
+
+
+
 /*body {
 
 color: #fff;
-font-family: "Conv_AvenirLTStd-Book",Sans-Serif;
+font-family: "Conv_Avenir LTStd-Book",Sans-Serif;
 font-size: 14px;
 letter-spacing: 1px;
 line-height: 26px;
