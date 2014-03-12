@@ -1,91 +1,80 @@
 
 body {
-font-family: "Helvetica Neue",sans-serif;  /*"Conv_AvenirLTStd-Book",Sans-Serif;*/
-font-size: 14px;
-letter-spacing: 1px;
-line-height: 26px;
+    font-family: "Helvetica Neue",sans-serif;  /*"Conv_AvenirLTStd-Book",Sans-Serif;*/
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 26px;
 }
 
-
-.page-header {font-size:25px;
-              color: #808080;
-              font-weight:bold;
-}
-
-.page-header h1 .smalltitle {font-size: 30px;
-}
-
-.navbar-default-upmenu {background-color: white;
-                        border: none;
-}
-
-.navbar-nav li {font-family:"Conv_AvenirLTStd-Heavy",Sans-Serif;
-               font-size:16px;
-               text-transform:uppercase;
-               color: #000000;
-               margin-left:40px;
-               margin-right:30px;
-}
-
-.navbar-nav.sigla {font-size: 28px;
-                    font-weight: bold;
-                    color: darkgoldenrod;
-                    opacity: 80;
-}
-
-.raw-backinfos {background-color: #808080;
-}
-
-
-
-.navbar-nav li a:link {text-decoration:none;
-        color: black;
-}
-
-.img-responsive-staticbanner {width:100%;
-                              height:320px;
-}
-
-.img-responsive-projects {width:350px;
-                        height:233px;
-}
-
-.text-block-projects {background:rgba(193,205,205,0.5);
-                      height:300px;
-                      padding:8px 8px 0px 8px;
-                      text-align:center;
-                      margin-top: 10px;
-                      color: steelblue;
-                      border-radius:2px;
-}
-
-.text-block {color: greenyellow;
-}
-
-.btn-default-more-info {
-                        font-size: 16px;
-                        text-align:left;
-                        margin-bottom:100px;
-}
-
-.titlu_middle {text-align:center;
-    font-size:25px;
-    text-decoration:none;
-    color: #808080;
+.titlu_middle{
     text-align:center;
-    padding-top:45px;
-    padding-bottom:80px;
-    margin-bottom: 20px;
-    margin-top:20px;
+    font-size:25px;
+    text-align:center;
+    padding-bottom: 60px;
+    margin-top:200px;
 }
 
-.col-md-3-photobox {
+.titlu_middle a {
+    text-decoration:none;
+    color: dimgrey;
+}
+/* Page Header*/
+
+.page-header {
+    font-size:25px;
+    color: #808080;
+    font-weight:bold;
 }
 
-.img-circle {margin-left: 50px;
+.page-header h1 .smalltitle {
+    font-size: 30px;
 }
 
-.member-text {text-align: center;
+
+/* Menu */
+
+.navbar-default-upmenu {
+    background-color: white;
+    border: none;
+}
+
+
+.navbar-nav li{
+    font-family:"Conv_AvenirLTStd-Heavy",Sans-Serif;
+    font-size:16px;
+    text-transform:uppercase;
+    color: lightseagreen;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.navbar-nav.sigla {
+    font-size: 28px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    opacity: 80;
+}
+
+.navbar-nav a:hover {
+    color:lawngreen;
+}
+
+.raw-backinfos {
+    background-color: #808080;
+}
+
+
+.navbar-nav li a:link {
+    text-decoration:none;
+    color: black;
+}
+
+
+/* Image Carousel*/
+
+.img-responsive-staticbanner {
+    width:100%;
+    height:320px;
 }
 
 .carousel .item {
@@ -94,22 +83,204 @@ line-height: 26px;
 }
 .carousel .item img {
     width: 100%; /*img width*/
-
-.carousel-caption .text-slide {font-family: Great Vibes;
 }
 
-.col-md-6-vision {text-align: center;
+.carousel-caption .text-slide {
+    font-family: Great Vibes;
 }
 
-.col-md-6-vision p {line-height:100%;
+
+/* Our VISION */
+#vision-text {
+    line-height: 3;
 }
 
-a:hover {text-decoration:none;
+
+/* PROJECTS */
+
+
+.img-responsive-projects {
+    width:100%;
+    height:233px;
+}
+
+.text-block-projects {
+    /*background:#CDAD00;	;  ; ; ;;/*#66CD00 - light green*/
+    height:370px;
+    padding:6px 6px 0px 6px;
+    text-align:center;
+    margin-top: 10px;
+    color:white;
+    border-radius:2px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
+.btn-default-more-info {
+    font-size: 16px;
+    text-align:left;
+    margin-bottom:100px;
+}
+
+#img1 {
+    background-color:#60ad47;
+}
+
+#img1:hover {
+    background-color:#9ACD32;
+    text-decoration: none !important;
+}
+
+#img2 {
+    background-color: #CDAD00;
+}
+
+#img2:hover {
+    background-color: #FFB90F;
+}
+
+#img3 {
+    background-color:#53868B;
+}
+
+#img3:hover {
+    background-color:#03A89E;
+}
+
+#img4 {
+    background-color: #388E8E;
+}
+
+#img4:hover {
+    background-color:# #3CB371; #66CDAA; #48D1CC;
+}
+
+#img5 {
+    background-color:#525252; #20B2AA; #9ACD32;
+}
+
+#img5:hover {
+    background-color:#3CB371;
+}
+
+#img6 {
+    background-color:limegreen;
+}
+
+#img6:hover {
+    background-color:#66CD00;
+}
+
+
+/*Our TEAM*/
+
+.img-circle {
+    margin-left: 50px;
+}
+
+.member-text {
+    text-align: center;
+}
+
+
+.col-md-6-vision {
+    text-align: center;
+}
+
+.col-md-6-vision p {
+    line-height:100%;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    width: 100%;
+    height: 300px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+    color: white;
+    padding: 80px 0 40px 0;
+}
+
+
+
+/*a:hover {text-decoration:none;
          color:darkviolet;
 }
 
 a:visited {color: greenyellow;
+} */
+
+
+/*AFRICA PAGE*/
+
+#africa-block {
+    background-color:#EEDC82;
+    height: 500px;
+    margin-top: 20px;
 }
+
+
+
+/* PROJECTS - ALTERNATIVES
+.block-projects {
+    height:350px;
+    background-color: #333;
+    text-align: center;
+    color: #ffffff;
+}
+
+.block-projects:hover {
+    background-color: goldenrod !important;
+    text-decoration: none !important;
+}
+
+
+.row-projects a:hover {
+    text-decoration: none !important;
+}
+
+.text-block-projects1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.text-block {
+    color: greenyellow;
+}
+
+.btn-default-more-info {
+    font-size: 16px;
+    text-align:left;
+    margin-bottom:100px;
+}
+
+
+ /*.contentPanel {
+    background-color: green;
+}
+
+.textContent {
+    height: 100px;
+}
+
+.textContent p {
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    padding:8px 8px 0px 8px;
+}
+
+.contentPanel:hover {
+    background-color: goldenrod !important;
+    text-decoration: none !important;
+}
+ */
 
 
 
