@@ -1,23 +1,62 @@
 
-.navbar-nav {text-align: center;
-            font-family:"Conv_AvenirLTStd-Heavy",Sans-Serif;
-            text-transform: uppercase;
-            margin-top: 20px;
+.navbar-nav {
+    text-align: center;
+    font-family:"Conv_AvenirLTStd-Heavy",Sans-Serif;
+    font-size: 20px;
+    color: dimgrey;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
-.navbar-nav li {padding-left: 5px;}
-
-.navbar-default {height: 100px;
-                background-color: white;
+.navbar-nav li {
+    padding-left:5px;
 }
 
-.container-menu {padding-top: 5px;
+.navbar-default {
+    height: 100px;
+    background-color: white;
+    border: none;
+    padding-right: 5px;
 }
 
-.col-md-12-block {background-color: yellowgreen;
-                  height: 350px;
+#elephantu {
+    height: 120px;
+    width: 150px;
 }
 
-.col-md-4-main-message {padding-left:20px;
-                        padding-top: 100px;
+.container-menu {
+    padding-top: 5px;
+}
+
+.col-md-12-block {
+    background-image: url(http://images.fineartamerica.com/images-medium-large-5/green-abstract-frank-tschakert.jpg);
+    background-color: yellowgreen;
+    height: 450px;
+}
+
+.col-md-4-main-message {
+    padding-left:20px;
+    padding-top: 100px;
+}
+
+.green-block {
+    margin-top:60px;
+}
+
+.main-message {
+    padding-top: 160px;
+}
+
+.user-input {
+    text-align: center;
+    padding-top:160px;
+}
+
+.input-group {
+    padding-bottom: 10px;
+    height:60px;
+}
+
+.form-control {
+    height: 60px;
 }
