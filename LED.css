@@ -79,7 +79,7 @@ body {
 
 .carousel .item {
     width: 100%; /*slider width*/
-    max-height: 400px; /*slider height*/
+    max-height: 500px; /*slider height*/
 }
 .carousel .item img {
     width: 100%; /*img width*/
@@ -217,13 +217,10 @@ a:visited {color: greenyellow;
 } */
 
 
-/*AFRICA PAGE*/
 
-#africa-block {
-    background-color:#EEDC82;
-    height: 500px;
-    margin-top: 20px;
-}
+
+
+
 
 
 

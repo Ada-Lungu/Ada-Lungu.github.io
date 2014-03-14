@@ -1,0 +1,85 @@
+
+
+.african-carousel{
+    width:100%; /*slider width*/
+    height:auto; /*slider height*/
+}
+
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+#africa-row {
+    margin-top: 90px;
+}
+
+#africa-block {
+
+    padding:20px;
+    font-size: 16px;
+    color: black;
+    border-color:darkgoldenrod;
+}
+
+/*#africa-block .africa-description {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}*/
+
+.arrow-explain {
+    font-size: 30px;
+    color: dimgrey;
+}
+
+
+.africa-description {
+    border-color: darkgoldenrod;
+}
+
+.cassette-african-projects {
+    height: 60px;
+    width: auto;
+    text-align: center;
+    background-color: palegoldenrod;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+#cassette1 {text-align: center;
+}
+
+#cassette1:hover {
+    background-color: goldenrod;
+}
+
+#story2 {
+    margin-top: 150px;
+}
+
+#cassette2 {
+    background-color: orange;
+}
+
+#cassette2:hover {
+    background-color: darkorange;
+}
+
+#story3 {
+    margin-top: 150px;
+}
+
+#cassette3 {
+    background-color: steelblue;
+}
+
+#cassette3:hover {
+    background-color: dodgerblue;
+}
+
+.inside-box{
+    font-size: 25px;
+    text-align: center;
+    padding-right: 7px;
+}
+
