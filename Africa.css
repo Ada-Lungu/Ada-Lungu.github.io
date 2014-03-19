@@ -1,4 +1,8 @@
 
+body {
+    background-img: url(http://fc09.deviantart.net/fs48/i/2009/202/0/7/Old_Newspaper_Texture_by_powerpuffjazz.jpg);
+}
+
 .african-carousel{
     width:100%; /*slider width*/
     height:auto; /*slider height*/
@@ -79,5 +83,10 @@
     font-size: 25px;
     text-align: center;
     padding-right: 7px;
+}
+
+#textile-strip {
+    width: 600px;
+    height: 70px;
 }
 
