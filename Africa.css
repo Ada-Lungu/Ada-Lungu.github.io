@@ -3,6 +3,10 @@ body {
     background-img: url(http://fc09.deviantart.net/fs48/i/2009/202/0/7/Old_Newspaper_Texture_by_powerpuffjazz.jpg);
 }
 
+.navbar-nav {
+    background-img: url(http://fc09.deviantart.net/fs48/i/2009/202/0/7/Old_Newspaper_Texture_by_powerpuffjazz.jpg);
+}
+
 .african-carousel{
     width:100%; /*slider width*/
     height:auto; /*slider height*/
@@ -16,12 +20,17 @@ body {
     margin-top: 90px;
 }
 
-#africa-block {
+#outdoor-block {
     padding:20px;
     font-size: 16px;
     color: black;
     border-color:darkgoldenrod;
 }
+
+#outdoor-block a {
+    font-weight: bold;
+}
+
 
 /*#africa-block .africa-description {
     font-size: 16px;
@@ -35,8 +44,12 @@ body {
 }
 
 
-.africa-description {
+.outdoor-description {
     border-color: darkgoldenrod;
+}
+
+.outdoor-description h4 {
+    font-weight: bold;
 }
 
 .cassette-african-projects {
@@ -85,8 +98,8 @@ body {
     padding-right: 7px;
 }
 
-#textile-strip {
-    width: 600px;
-    height: 70px;
+#textile-strip img {
+    width:100%; /*slider width*/
+    height:160px; /*slider height*/
+    margin-top:50px;
 }
-

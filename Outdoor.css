@@ -1,0 +1,84 @@
+
+body p {
+    color:#333;
+}
+
+body h3 {
+    color: #333;
+    font-family: Calibri, Sans-Serif;
+}
+
+body h4 {
+    color: #333;
+}
+
+#outdoor-row {
+    margin-top: 90px;
+}
+
+#outdoor-block {
+    padding:20px;
+    font-size: 16px;
+    border-right: solid;
+    border-right-color:darkgrey;
+    border-width: 2px;
+}
+
+#outdoor-block a {
+    font-weight: bold;
+}
+
+
+/*#africa-block .africa-description {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}*/
+
+.arrow-explain {
+    font-size: 30px;
+    color: dimgrey;
+}
+
+
+.outdoor-description {
+    border-color: darkgoldenrod;
+}
+
+.outdoor-description h3 {
+    font-weight: bold;
+}
+
+.outdoor-description h4 {
+    font-weight: bold;
+}
+
+.abilitati {
+    font-size: 20px;
+    color: limegreen;
+}
+
+.cassette-outdoor-projects {
+    height: 60px;
+    width: auto;
+    text-align: center;
+    background-color: ghostwhite;
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+#cassette1 {text-align: center;
+}
+
+.polaroid_white {
+    background-color:ghostwhite;
+    height: 300px;
+    padding: 60px;
+    box-shadow: -5px 7px 6px #777;
+
+}
+
+.polaroid-white img {
+    height: 20px;
+    width: 20px;
+}

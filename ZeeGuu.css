@@ -124,11 +124,11 @@ body {
 }
 
 
-#middle-title {
+.middle-title {
     margin-top: 120px;
     text-align: center;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 footer {
@@ -140,4 +140,40 @@ footer {
     margin-top: 80px;
     color: white;
     padding: 80px 0 40px 0;
+}
+
+.probm-sol {
+    margin-top: 0px;
+    background-color:#404040;
+}
+
+.probm-sol p {
+    font-size:17px;
+    color: #f5f5f5; dimgrey;
+}
+
+.probm-sol-cassette {
+    text-align: center;
+    padding: 30px;
+}
+
+.probm-sol-cassette p {
+    padding-top: 30px;
+}
+
+.probm-sol-cassette h3 {
+    padding-bottom: 50px;
+    color: #66CD00;
+}
+
+.arrow-explain {
+    font-size: 30px;
+    color: dimgrey;
+    padding-bottom: 60px;
+
+}
+
+.arrows {
+    margin-top: 300px;
+    text-align: center;
 }
