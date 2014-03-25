@@ -15,10 +15,15 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 20px;
+    color:#f5f5f5;
 }
 
 .navbar-nav li {
     padding-left:5px;
+}
+
+.navbar-nav li:hover {
+    color: greenyellow;
 }
 
 .navbar-default {
@@ -168,10 +173,14 @@ footer {
 
 .arrow-explain {
     font-size: 30px;
-    color: dimgrey;
+    color: lightgrey;
     padding-bottom: 60px;
-
 }
+
+.arrow-explain:hover {
+    color: greenyellow;
+}
+
 
 .arrows {
     margin-top: 300px;
