@@ -176,7 +176,7 @@ body {
 }
 
 .text-block-projects {
-    /*background:#CDAD00;	;  ; ; ;;/*#66CD00 - light green*/
+    /*background:#CDAD00; /*#66CD00 - light green*/
     height:370px;
     padding:6px 6px 0px 6px;
     text-align:center;
@@ -187,6 +187,16 @@ body {
     margin-bottom: 120px;
     box-shadow: -5px 6px 7px #777;
 }
+
+.flag {
+	width: 25px;
+	height: 15px;
+	background:url(img/flags.png) no-repeat;
+}
+
+.flag.flag-ro {background-position: -25px 0;}
+
+.flag.flag-us {background-position: 0 -15px;}
 
 
 .btn-default-more-info {
