@@ -1,6 +1,6 @@
 
 body {
-    background-img: url(http://fc09.deviantart.net/fs48/i/2009/202/0/7/Old_Newspaper_Texture_by_powerpuffjazz.jpg);
+    background-img src:img/african-womans-heads.jpg;
 }
 
 .navbar-nav {
@@ -18,13 +18,19 @@ body {
 
 #africa-row {
     margin-top: 90px;
+    border-color:darkgoldenrod;
 }
 
 #outdoor-block {
     padding:20px;
     font-size: 16px;
+    text-align: justify;
     color: black;
-    border-color:darkgoldenrod;
+    /*border-color:#757575;
+    border-width: 3px;
+    border-style: solid;*/
+    /*background-image: url("http://subtlepatterns.com/patterns/dimension.png"); url("http://subtlepatterns.com/patterns/skulls.png");*/
+    background-color:#EECBAD; #E3E3E3; #EEE8AA;
 }
 
 #outdoor-block a {
@@ -50,6 +56,8 @@ body {
 
 .outdoor-description h4 {
     font-weight: bold;
+    margin-top: 20px;
+
 }
 
 .cassette-african-projects {
@@ -57,8 +65,9 @@ body {
     width: auto;
     text-align: center;
     background-color: palegoldenrod;
+    /*padding-top: 5px;*/
+    margin-bottom: 100px;
     padding-top: 5px;
-    margin-bottom: 40px;
 }
 
 #cassette1 {text-align: center;
@@ -99,7 +108,17 @@ body {
 }
 
 #textile-strip img {
-    width:100%; /*slider width*/
-    height:160px; /*slider height*/
-    margin-top:50px;
+
+    height:120px; /*slider height*/
+    margin-top: -21px;
+    border-style: solid;
+    border-color: #5C5C5C;
+}
+
+#textile-strip-feet img {
+
+    height:120px; /*slider height*/
+    margin-top:20px;
+    border-style: solid;
+    border-color: #5C5C5C;
 }

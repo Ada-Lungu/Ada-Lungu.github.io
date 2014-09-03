@@ -1,3 +1,6 @@
+body {
+    background-color:; #9ACD32;#458B00; #B3EE3A;
+}
 
 body p {
     color:#333;
@@ -22,6 +25,7 @@ body h4 {
     border-right: solid;
     border-right-color:darkgrey;
     border-width: 2px;
+    background-color:;#C1FFC1;#CAFF70;#B3EE3A;
 }
 
 #outdoor-block a {
