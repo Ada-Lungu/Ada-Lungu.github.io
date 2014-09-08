@@ -1,65 +1,51 @@
-body {
-    background-color:; #9ACD32;#458B00; #B3EE3A;
-}
 
-body p {
-    color:#333;
-}
 
-body h3 {
-    color: #333;
-    font-family: Calibri, Sans-Serif;
-}
-
-body h4 {
-    color: #333;
-}
-
+/*CONTENT*/
 #outdoor-row {
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
-#outdoor-block {
+#outdoor-description-block {
     padding:20px;
-    font-size: 16px;
-    border-right: solid;
-    border-right-color:darkgrey;
+    /*font-family: "Helvetica Neue",sans-serif,"Open Sans",sans-serif;*/
+    font-size: 15px;
     border-width: 2px;
-    background-color:;#C1FFC1;#CAFF70;#B3EE3A;
+    border-right: solid darkgrey;
 }
 
-#outdoor-block a {
+#outdoor-description-block a {
     font-weight: bold;
 }
-
-
-/*#africa-block .africa-description {
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-}*/
 
 .arrow-explain {
-    font-size: 30px;
+    font-size: 20px;
     color: dimgrey;
 }
 
-
 .outdoor-description {
     border-color: darkgoldenrod;
+    line-height: 30px;
 }
 
 .outdoor-description h3 {
     font-weight: bold;
+    font-family: "Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
 }
 
 .outdoor-description h4 {
     font-weight: bold;
+    margin-top: 40px;
+    font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
+    margin-bottom:35px;
 }
 
 .abilitati {
     font-size: 20px;
     color: limegreen;
+}
+
+.outdoor-projects {
+    margin-top: 40px;
 }
 
 .cassette-outdoor-projects {
@@ -85,3 +71,36 @@ body h4 {
     height: 20px;
     width: 20px;
 }
+
+a {
+   color: #707070;
+}
+
+
+/*FOOTER*/
+
+/*footer {*/
+    /*font-family:"Raleway",sans-serif, "Open Sans", "Conv_AvenirLTStd-Book";*/
+    /*line-height: 30px;*/
+    /*background-color: #333;*/
+    /*width: 100%;*/
+    /*height: 300px;*/
+    /*padding-top: 40px;*/
+    /*padding-bottom: 20px;*/
+    /*margin-top: 80px;*/
+    /*color: white;*/
+/*}*/
+
+/*footer p {*/
+    /*color: white;*/
+    /*font-family:"Raleway",sans-serif, "Open Sans", "Conv_AvenirLTStd-Book";*/
+/*}*/
+
+/*footer h4 {*/
+    /*color: white;*/
+/*}*/
+
+/*footer h1 {*/
+    /*margin-left: 30px;*/
+    /*margin-top: -20px;*/
+/*}*/

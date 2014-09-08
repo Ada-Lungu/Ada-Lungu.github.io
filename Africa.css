@@ -1,12 +1,4 @@
 
-body {
-    background-img src:img/african-womans-heads.jpg;
-}
-
-.navbar-nav {
-    background-img: url(http://fc09.deviantart.net/fs48/i/2009/202/0/7/Old_Newspaper_Texture_by_powerpuffjazz.jpg);
-}
-
 .african-carousel{
     width:100%; /*slider width*/
     height:auto; /*slider height*/
@@ -14,50 +6,62 @@ body {
 
 .carousel .item img {
     width: 100%; /*img width*/
+    max-height:480px;
 }
 
+
+/*DESCRIPTION*/
 #africa-row {
     margin-top: 90px;
     border-color:darkgoldenrod;
 }
 
-#outdoor-block {
+#africa-description-block {
     padding:20px;
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
     color: black;
-    /*border-color:#757575;
-    border-width: 3px;
-    border-style: solid;*/
-    /*background-image: url("http://subtlepatterns.com/patterns/dimension.png"); url("http://subtlepatterns.com/patterns/skulls.png");*/
-    background-color:#EECBAD; #E3E3E3; #EEE8AA;
+    background-color:#EECBAD;
 }
 
-#outdoor-block a {
+#africa-description-block h4 {
+    font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
     font-weight: bold;
 }
 
+#africa-description-block a {
+    font-weight: bold;
+    font-family: "Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
+    font-size: 15px;
+}
 
-/*#africa-block .africa-description {
+#hope-school {
+    font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
     font-size: 16px;
-    color: black;
-    font-weight: bold;
-}*/
+    margin-top:-20px;
+}
+
+/*#arrow:before {*/
+    /*content:'\27AD';*/
+    /*color: darkslategrey;*/
+    /*font-size: 30px;*/
+/*}*/
+
 
 .arrow-explain {
-    font-size: 30px;
+    font-size: 20px;
     color: dimgrey;
 }
 
-
-.outdoor-description {
+.africa-description {
     border-color: darkgoldenrod;
+    line-height: 30px;
 }
 
-.outdoor-description h4 {
+.africa-description h4 {
     font-weight: bold;
     margin-top: 20px;
-
+    margin-bottom: 35px;
 }
 
 .cassette-african-projects {
@@ -68,6 +72,7 @@ body {
     /*padding-top: 5px;*/
     margin-bottom: 100px;
     padding-top: 5px;
+    font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
 }
 
 #cassette1 {text-align: center;
@@ -102,7 +107,7 @@ body {
 }
 
 .inside-box{
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     padding-right: 7px;
 }
@@ -111,6 +116,7 @@ body {
 
     height:120px; /*slider height*/
     margin-top: -21px;
+    margin-bottom: 50px;
     border-style: solid;
     border-color: #5C5C5C;
 }
@@ -122,3 +128,4 @@ body {
     border-style: solid;
     border-color: #5C5C5C;
 }
+

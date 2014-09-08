@@ -1,0 +1,21 @@
+
+/*DESCRIPTION*/
+
+#coderdojo-row {
+    margin-top: 90px;
+}
+
+#coderdojo-description-block {
+    padding:20px;
+    font-size: 16px;
+    border-width: 2px;
+    border-right: solid darkgrey;
+}
+
+#coderdojo-description-block a {
+    font-weight: bold;
+}
+
+.coderdojo-description h3 {
+    font-weight: bold;
+}
