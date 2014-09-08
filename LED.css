@@ -101,7 +101,7 @@ margin-bottom:10px;
 
 .img-responsive-staticbanner {
     width:100%;
-    height:360px;
+    /*height:360px;*/
 }
 
 .carousel .item {
@@ -133,9 +133,9 @@ margin-bottom:10px;
 
 .white-background-picture {
     width:100%;
-    height:280px;
+    /*height:280px;*/
     background-color: ghostwhite;
-    padding:10px 5px 20px 5px;
+    padding:10px 5px 5px 5px;
     box-shadow: -5px 6px 7px #777;
     /*-webkit-transform:rotate(-4deg);*/
 }
@@ -149,11 +149,11 @@ margin-bottom:10px;
 }
 
 .rotate-left-documentaryhunters {
-    -webkit-transform:rotate(4deg);
+    -webkit-transform:rotate(-4deg);
 }
 
 .rotate-left-grow {
-    -webkit-transform:rotate(4deg);
+    -webkit-transform:rotate(-4deg);
 }
 
 .white-background-picture h3 {
@@ -162,7 +162,7 @@ margin-bottom:10px;
 }
 
 .img-responsive-projects {
-    height:210px;
+    /*height:210px;*/
     width:100%;
 }
 
