@@ -8,7 +8,7 @@ body {
     font-family: "Helvetica Neue",sans-serif,"Open Sans", sans-serif, "Times New Roman", "Conv_AvenirLTStd-Book", Sans-Serif;
     font-size: 14px;
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 28px;
     background-color:#E8E8E8 !important;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-nav li {
-    font-family:"Raleway-Regular", "Open Sans", "Helvetica Neue", "Conv_AvenirLTStd-Heavy",Sans-Serif;
+    font-family:"Open Sans",sans-serif,"Raleway-SemiBold",sans-serif, "Helvetica Neue",sans-serif, "Conv_AvenirLTStd-Heavy",Sans-Serif;
     font-weight: bold;
     font-size:16px;
     text-transform:uppercase;
@@ -123,6 +123,19 @@ margin-bottom:10px;
 
 /* PROJECTS */
 
+.projects {
+    border-top: 1px solid rgba(169, 169, 169, 0.68);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#title-projects {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align:center;
+    font-family:"Raleway-SemiBold",sans-serif, "Open Sans",sans-serif, "Conv_AvenirLTStd-Book",sans-serif;
+}
+
 .all-photo-pictures {
     margin-top: 100px;
 }
@@ -168,7 +181,7 @@ margin-bottom:10px;
 
 .text-block-projects {
     /*background:#CDAD00; /*#66CD00 - light green*/
-    font-family: "Raleway",sans-serif, "Open Sans",sans-serif;
+    font-family:"Helvetica Neue",sans-serif,"Open Sans", sans-serif, "Times New Roman", "Conv_AvenirLTStd-Book", Sans-Serif;
     font-size: 14px;
     line-height: 26px;
     height:370px;
@@ -249,19 +262,19 @@ margin-bottom:10px;
 }
 
 #img4 {
-    background-color: #388E8E;
+    background-color:#388E8E;
 }
 
 #img4:hover {
-    background-color:#3CB371;
+    background-color: #40c5a7;
 }
 
 #img5 {
-    background-color:#525252;
+    background-color:#00868B;
 }
 
 #img5:hover {
-    background-color:#3CB371;
+    background-color: rgba(0, 180, 183, 0.93);
 }
 
 #img6 {
@@ -277,6 +290,8 @@ margin-bottom:10px;
 
 .team {
     border-top: 1px solid rgba(169, 169, 169, 0.68);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #title-team{
@@ -319,19 +334,52 @@ margin-bottom:10px;
 
 /*VISION*/
 
-.vision {
+.vision-description {
     border-top: 1px solid rgba(169, 169, 169, 0.68);
-    margin-top: 80px;
+    /*margin-top: 80px;*/
+    /*margin-bottom: 50px;*/
+    text-align: center;
+    font-size: 16px;
+    /*margin-left: 100px;*/
+    /*margin-right: 100px;*/
+    margin: 80px 100px 50px
 }
 
 #title-vision{
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     text-align: center;
-    font-family: "raleway-semibold",sans-serif;
+    font-family:"Raleway-Semibold",sans-serif;
 }
 
+.vision-description h4{
+    margin-top:60px;
+}
 
+.what-we-believe {
+    background-color: rgba(128, 128, 128, 0.17);
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+.what-we-do {
+    background-color: rgba(128, 128, 128, 0.17);
+    margin-right: 70px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+#what-we-believe {
+    padding-top:30px;
+    margin-bottom: -60px;
+    padding-bottom: 40px;
+}
+
+#what-we-do {
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
 
 /*FOOTER*/
 
@@ -353,6 +401,7 @@ footer h1 {
     margin-top: -20px;
 }
 
-
-
+.partners {
+    margin-top: 60px;
+}
 
