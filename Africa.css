@@ -9,6 +9,10 @@
     max-height:480px;
 }
 
+.page-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /*DESCRIPTION*/
 #africa-row {
@@ -29,11 +33,11 @@
     font-weight: bold;
 }
 
-#africa-description-block a {
-    font-weight: bold;
-    font-family: "Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
-    font-size: 15px;
-}
+/*#africa-description-block a {*/
+    /*font-weight: bold;*/
+    /*font-family: "Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;*/
+    /*font-size: 15px;*/
+/*}*/
 
 #hope-school {
     font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
@@ -74,6 +78,13 @@
     margin-bottom: 300px;
     padding-top: 5px;
     font-family:"Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, "Helvetica Neue",sans-serif;
+}
+
+.african-projects h4 {
+    font-family:"Raleway-SemiBold",sans-serif, "Raleway-SemiBold",sans-serif,"Open Sans",sans-serif, Copperplate,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
 }
 
 #cassette1 {text-align: center;
@@ -130,3 +141,10 @@
     border-color: #5C5C5C;
 }
 
+.cassette-african-projects a:link {
+    color: #333;
+}
+
+.africa-description p {
+   padding-bottom: 20px;
+}

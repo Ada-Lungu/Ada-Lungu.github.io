@@ -1,22 +1,40 @@
 
+.page-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /*DESCRIPTION*/
 
 #coderdojo-row {
     margin-top: 90px;
 }
 
-#coderdojo-description-block {
+/*#coderdojo-description-block {*/
+    /*padding:20px;*/
+    /*font-size: 15px;*/
+    /*border-right: 1px solid darkgrey;*/
+    /*text-align: center;*/
+/*}*/
+
+.coderdojo-description {
     padding:20px;
     font-size: 15px;
-    border-width: 2px;
-    border-right: solid darkgrey;
+    /*border-right: 1px solid darkgrey;*/
+    text-align: justify;
 }
 
 #coderdojo-description-block a {
-    font-weight: bold;
+font-weight: bold;
+
 }
 
 .coderdojo-description h3 {
-    font-weight: bold;
-    font-family: "Raleway-SemiBold",sans-serif, "Open Sans",sans-serif;
+font-weight: bold;
+font-family: "Raleway-SemiBold",sans-serif, "Open Sans",sans-serif;
+text-align: center;
+}
+
+#fb-icon {
+    text-align: center;
 }

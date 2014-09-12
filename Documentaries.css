@@ -1,4 +1,10 @@
 
+.page-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*CONTENT*/
 .discover-world {
     background-color:#AEEEEE;
     padding: 40px;

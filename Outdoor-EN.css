@@ -1,0 +1,93 @@
+
+.page-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*CONTENT*/
+
+
+.outdoor-description {
+    margin: 80px 0px 40px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.outdoor-description p {
+    padding-bottom: 10px;
+}
+
+#outdoor-description-block a {
+    font-weight: bold;
+}
+
+.arrow-explain {
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.outdoor-description h3 {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+.outdoor-description h4 {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+#first-title {
+    margin-top: -5px;
+}
+
+#why-exp-learning p {
+    text-align: center;
+}
+
+.abilitati {
+    font-size: 20px;
+    color: limegreen;
+}
+
+.exp-learning {
+    font-size: 20px;
+    color: dimgrey;
+}
+
+.enumeration {
+    text-align: justify;
+    margin-left: 210px;
+}
+
+.outdoor-projects {
+    margin-top: 40px;
+}
+
+.summer-camp {
+    margin: 20px 0px 40px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.summer-camp p {
+    padding-bottom: 10px;
+}
+
+.summer-camp h4 {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(169, 169, 169, 0.68);
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
+    padding-top: 80px;
+}
+
+#video {
+    text-align: center;
+    padding-top: 30px;
+}
