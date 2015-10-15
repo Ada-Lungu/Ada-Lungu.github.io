@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="" />
+
+    <title>Thursday 10 September</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="house.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="container">
+     <div class="page-header row">
+        <h2>Household Energy Keeper <small class="smalltitle">
+              Turn Off the Lights
+            </small>
+        </h2>
+    </div>
+
+<!--MENU-->
+
+<div class="row">
+    <div class="login-section col-md-6">
+        <input type="text" id="user-name">
+        <a href="#"><p id="sign-in">Sign In</p></a>
+    </div>
+
+    <div id="controlPanelRow" class="col-md-6">
+        <div id="controlPanel"></div>
+    </div>
+</div>
+
+
+<!--SECTION HOUSE-->
+
+
+    <div id="house" class="row">
+        <!-- <div class="col-md-12"> -->
+        <div id="rooms" class="col-md-12" ></div>
+    </div>
+
+    <!-- </div> -->
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- <script src="myhouse.js"></script> -->
+
+
+<script>
+
+var current_user;
+
+
+house = {
+    "name":"Your house",
+    "rooms":[
+
+        {
+            // "width":"400px",
+            // "height":"500px",
+            "width":"327px",
+            "height":"182px",
+            "top":"316px",
+            "left":"556px",
+            "name":"Kitchen",
+            "image": "img/kitchen.jpeg"
+        },
+
+        {
+            // "width":"200px",
+            // "height":"300px",
+            "width":"327px",
+            "height":"216px",
+            "top":"100px",
+            "left":"556px",
+            "name":"Bedroom1",
+            "image": "img/bedroom.jpeg"
+        },
+
+        {
+            // "width":"410px",
+            // "height":"200px",
+            "width":"332px",
+            "height":"398px",
+            "top":"100px",
+            "left":"234px",
+            "name":"Livingroom",
+            "image": "img/livingroom.jpeg"
+        },
+
+        {
+            // "width":"200px",
+            // "height":"150px",
+            "width":"244px",
+            "height":"231px",
+            "top":"498px",
+            "left":"234px",
+            "name":"WorkRoom",
+            "image": "img/workroom.jpeg"
+        },
+
+        {
+            // "width":"190px",
+            // "height":"110px",
+            "width":"214px",
+            "height":"143px",
+            "top":"498px",
+            "left":"510px",
+            "name":"Bathroom",
+            "image": "img/bath.jpeg"
+
+        },   
+
+        {
+            // "width":"410px",
+            // "height":"140px",
+            "width":"134px",
+            "height":"461px",
+            "top":"115px",
+            "left":"105px",
+            "name":"Terrace",
+            "image": "img/terrace.jpeg"
+        }, 
+    ],
+
+    "utilities": [
+    {
+        "name": "tap-water",
+        "type": "water",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        "id": "tap-waterBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        // "color": "red",
+        "left": "85px",
+        "top": "20px",
+        "symbol":"fa-tint"
+    },
+    {
+        "name": "shower-water",
+        "type": "water",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        // "id": "tap-waterBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        // "color": "red",
+        "left": "160px",
+        "top": "40px",
+        "symbol":"fa-tint"
+    },  
+    {
+        "name": "flash-water",
+        "type": "water",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        "id": "tap-waterBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        // "color": "red",
+        "left": "25px",
+        "top": "35px",
+        "symbol":"fa-tint"
+    },  
+    {
+        "name": "tap-water",
+        "type": "water",
+        "consumption": "1",
+        "state": "off",
+        "room": "Kitchen",
+        "id": "tap-waterKitchen",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        // "color": "red",
+        "left": "90px",
+        "top": "140px",
+        "symbol":"fa-tint"
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bedroom1",
+        "id": "lightbulbBedroom1",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        // "color": "yellow",
+        "left": "60px",
+        "top": "120px",
+        // "symbol":"http://www.cliparthut.com/clip-arts/290/tap-water-clip-art-290137.jpg"
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Livingroom",
+        "id": "lightbulbLivingroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "10px",
+        "top": "10px",
+        // "symbol":"http://www.cliparthut.com/clip-arts/290/tap-water-clip-art-290137.jpg"
+    },
+    {
+        "name": "TV",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Livingroom",
+        "id": "TVLivingroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "295px",
+        "top": "40px",
+        "symbol":"fa-bolt"
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "WorkRoom",
+        "id": "lightbulbWorkRoom",
+        "counter": "0",
+        "width": "10px",
+        "height": "10px",
+        "color": "red",
+        "left": "10px",
+        "top": "10px",
+        // "symbol":"http://www.cliparthut.com/clip-arts/290/tap-water-clip-art-290137.jpg"
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Kitchen",
+        "id": "lightbulbKitchen",
+        "counter": "0",
+        "width": "10px",
+        "height": "10px",
+        "color": "red",
+        "left": "10px",
+        "top": "10px",
+        // "symbol":"http://www.cliparthut.com/clip-arts/290/tap-water-clip-art-290137.jpg"
+    },
+    {
+        "name": "oven",
+        "type": "electricity",
+        "consumption": "2",
+        "state": "off",
+        "room": "Kitchen",
+        "id": "ovenKitchen",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "103px",
+        "top": "38px",
+        "symbol":"fa-bolt"
+    },
+    {
+        "name": "fridge",
+        "type": "electricity",
+        "consumption": "4",
+        "state": "off",
+        "room": "Kitchen",
+        "id": "ovenKitchen",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "290px",
+        "top": "140px",
+        "symbol":"fa-bolt"
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        "id": "lightbulbBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "10px",
+        "top": "10px",
+    },
+    {
+        "name": "washing-machine",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        "id": "lightbulbBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "170px",
+        "top": "100px",
+        "symbol":"fa-bolt"
+
+    },
+    {
+        "name": "lightbulb",
+        "type": "electricity",
+        "consumption": "1",
+        "state": "off",
+        "room": "Terrace",
+        "id": "lightbulbTerrrace",
+        "counter": "0",
+        "width": "10px",
+        "height": "10px",
+        "color": "red",
+        "left": "40px",
+        "top": "40px"
+    },
+    {
+        "name": "heating-system",
+        "type": "gas",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bedroom1",
+        "id": "heating-systemBedroom1",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "white",
+        "left": "290px",
+        "top": "120px",
+        "symbol":"fa-fire"
+    },
+    {
+        "name": "heating-system",
+        "type": "gas",
+        "consumption": "1",
+        "state": "off",
+        "room": "Livingroom",
+        "id": "heating-systemLivingroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "230px",
+        "top": "25px",
+        "symbol":"fa-fire"
+    },
+    {
+        "name": "heating-system",
+        "type": "gas",
+        "consumption": "1",
+        "state": "off",
+        "room": "WorkRoom",
+        "id": "heating-systemWorkroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "15px",
+        "top": "100px",
+        "symbol":"fa-fire"
+    },
+    {
+        "name": "heating-system",
+        "type": "gas",
+        "consumption": "1",
+        "state": "off",
+        "room": "Kitchen",
+        "id": "heating-systemKitchen",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "285px",
+        "top": "80px",
+        "symbol":"fa-fire"
+    },
+    {
+        "name": "heating-system",
+        "type": "gas",
+        "consumption": "1",
+        "state": "off",
+        "room": "Bathroom",
+        "id": "heating-systemBathroom",
+        "counter": "0",
+        "width": "50px",
+        "height": "50px",
+        "color": "red",
+        "left": "90px",
+        "top": "100px",
+        "symbol":"fa-fire"
+    }
+],
+    "general_counters": [{"type":"electricity", "counter":"0", "color":"#FFB90F", "symbol":"fa-bolt"},
+                         {"type":"water", "counter":"0", "color":"#20ACCC", "symbol":"fa-tint"},
+                         {"type":"gas", "counter":"0", "color":"#ADBD20", "symbol":"fa-fire"}
+
+    ]
+
+}
+
+
+    console.log(house.utilities);
+
+
+    function reloadPage(username) {
+        console.log('z');
+        if(username != 'default'){
+            house = JSON.parse(localStorage.getItem(username));
+            console.log('x');
+        };
+
+
+        for (var i = 0; i<house.rooms.length; i++) {
+            // var roomId=house.rooms[i].id;
+            var roomWidth=house.rooms[i].width;
+            var roomHeight=house.rooms[i].height;
+            var roomTop = house.rooms[i].top;
+            var roomLeft = house.rooms[i].left;
+            var roomColor = house.rooms[i].color;
+            var roomName = house.rooms[i].name;
+            var roomImage = house.rooms[i].image;
+
+            var buttonPanel = '<div class="button-panel" id="room'+ roomName +'"><i class="fa fa-times" id="room'+ roomName +'"></i><h3>'+ roomName+'</h3></div>';
+            console.log(buttonPanel);
+
+            $("body").append(buttonPanel);
+
+
+            $("#rooms").append('<div class="room" id="room'+ roomName +'"style="position: absolute; background-image: url('+ roomImage +'); top:' + roomTop+ '; left:'+ roomLeft +'; width:'+roomWidth+'; height:'+roomHeight+'";><div class="roomColor darkRoom"></div><i class="fa fa-lightbulb-o lightBulb lightBulbOff" id="'+roomName+'" style="text-align: center";></i></div>');
+
+            } 
+
+
+        //  create buttons for each utility in the slide-menu corresponding to each room
+
+        for (var i=0; i<house.utilities.length; i++) {
+            var roomName = house.utilities[i].room;
+            var utilityName = house.utilities[i].name;
+            console.log(roomName, utilityName);
+
+            var buttonUtility;
+
+            if (house.utilities[i].state == "off") {
+
+                buttonUtility = '<div><button class="btn btn-default btnUtilities" id="'+i+'" data-type="'+house.utilities[i].name+'" dataRoomDiv="room'+roomName+'">'+ utilityName + '</button></div>';
+
+            }else
+
+            {
+                buttonUtility = '<div><button class="btn btn-warning btnUtilities" id="'+i+'" data-type="'+house.utilities[i].name+'" dataRoomDiv="room'+roomName+'">'+ utilityName + '</button></div>';
+            }
+
+
+            if ($(".button-panel#room"+roomName+" #"+house.utilities[i].type).length == 0) {
+
+                $(".button-panel#room"+roomName).append('<div><p>'+house.utilities[i].type +' consumption: <span id="'+house.utilities[i].type +'">0</span></p></div>');        
+            };
+
+            $(".button-panel#room"+roomName).append(buttonUtility);
+
+            
+            // we check up the slide-menu of specific rooms has a child with id "#house.utilities[i].type", which is the id of the span paragraph 
+            // it gives us the type, so that we only add the span with consump info one on the page for each type
+
+            var utility = '<div class="utility" id="'+i+'" style="position: absolute;  width: '+ house.utilities[i].width+'; height: '+  house.utilities[i].height+'; left:'+ house.utilities[i].left+'; top:'+ house.utilities[i].top+'"><i class="fa '+house.utilities[i].symbol+' utilityOff" id="'+i+'"></i></div>';
+
+                // color:'+ house.utilities[i].color+';
+
+            $(".room#room"+roomName).append(utility);
+
+            }        
+    };
+
+    reloadPage('default');
+
+
+    function saveHouse(username){
+        localStorage.setItem(username, JSON.stringify(house));
+    };
+
+
+    function displayGeneralCounters() {
+
+
+        for (var i=0; i<house.general_counters.length; i++) {
+            $("#controlPanel").append('<div class="general_counter" style="display: inline-block; vertical-align: top; background-color:'+house.general_counters[i].color+'">'+house.general_counters[i].type +' : '+'<span id="'+ house.general_counters[i].type +'">' + house.general_counters[i].counter +'</span></div>');
+            }
+    }
+
+    displayGeneralCounters();   
+
+
+    // when click on utility buttons, turns the state on/off 
+    // function turnUtilityOnOff() {
+
+    $(document).on("click",".btnUtilities", function() {
+        // extract the value of id of clicked button: btnTapBathroom
+        var btnUtilityId = $(this).attr("id");
+        var buttonNameUtility = $(this).attr('data-type');
+        var roomName = house.utilities[btnUtilityId ].room;
+        // get the index/position of the element
+
+        // change the state of the element 
+        for (var i=0; i<house.utilities.length; i++) {
+            if (i == btnUtilityId) {
+                if (house.utilities[i].state == "on") {
+                    house.utilities[i].state = "off";
+                }
+                else{
+                    house.utilities[i].state = "on";
+                }
+
+                }
+        }
+
+        $(this).toggleClass('btn-warning');
+
+        $("#"+btnUtilityId+".fa").toggleClass('utilityOn utilityOff');
+
+        console.log("." +house.utilities[btnUtilityId ].symbol+ "#"+btnUtilityId);
+
+        if (buttonNameUtility == "lightbulb") {
+            $("#room"+roomName + ' .fa-lightbulb-o').toggleClass('lightBulbOn lightBulbOff');
+            $("#room"+roomName+" .roomColor").toggleClass('darkRoom');
+        }
+
+        saveHouse(current_user);
+
+    });
+
+
+    console.log(house.utilities[0].state);
+    console.log(house.utilities[0].id);
+
+
+
+    // set a counter working for each utility
+    function utilityCounter() {
+        
+        for (var i=0; i<house.utilities.length; i++) {
+
+            if (house.utilities[i].state == "on") {
+                var current_counter = Number(house.utilities[i].counter);
+                house.utilities[i].counter = current_counter + Number(house.utilities[i].consumption);
+                // console.log(house.utilities[i].counter);
+            }
+        }
+        
+        displayConsumpTypeCounter();
+        // saveHouse(localStorage.current_user);
+        // // console.log(house.general_counter);
+
+    } 
+
+
+    setInterval("utilityCounter()", 1000);
+    
+
+
+    function totalConsumpCounters() {
+
+        for (var i=0; i<house.general_counters.length; i++) {
+            var temp_general_counter = Number(house.general_counters[i].counter);
+            for (var j=0; j<house.utilities.length; j++) {
+                if (house.general_counters[i].type == house.utilities[j].type && house.utilities[j].state == "on") {
+
+                    temp_general_counter += Number(house.utilities[j].consumption);
+                    house.general_counters[i].counter = temp_general_counter;
+
+                }
+                $(".general_counter #"+ house.general_counters[i].type).html(temp_general_counter);
+            }
+            // console.log(house.general_counters[i].counter);
+        }
+        // saveToLocalStorage()
+        // saveHouse(localStorage.current_user);
+
+    }
+
+
+    setInterval("totalConsumpCounters()", 1000);
+    console.log(house);
+    
+
+
+
+    function displayConsumpTypeCounter() {
+        
+        for (var i=0; i<house.utilities.length; i++) {
+
+            if (house.utilities[i].state == "on") {
+                // extract the value status
+                var counter = house.utilities[i].counter;
+                // introduce in the html file in the span the new value
+                $(".button-panel#room"+ house.utilities[i].room + " #" + house.utilities[i].type).html(counter);
+
+            }
+        }
+    }
+    // setInterval("displayConsumpTypeCounter()", 1000);
+
+
+    // var buttonUtility = '<div><button class="btn btn-default btnUtilities" id="'+i+'" data-type="'+house.utilities[i].name+'" dataRoomDiv="room'+roomName+'">'+ utilityName + '</button></div>';
+
+
+
+
+
+
+    // function saveToLocalStorage() {
+
+    //     var strigifyedHouse = JSON.stringify(house);
+    //     // localStorage.house = strigifyedHouse;
+
+    //     localStorage[current_user] = strigifyedHouse;
+
+    // }
+
+
+    // drag/slide the menu on side when click on rooms
+    $(document).on('click', '.room', function(){
+        var roomId = $(this).attr('id');
+        //console.log(roomId);
+        $(".button-panel").not('#'+roomId).removeClass('slide-active');
+        $(".button-panel#"+roomId).toggleClass('slide-active');
+        });
+
+
+  
+
+
+ 
+
+
+
+</script>
+
+   
+
+</body>
+</html>
