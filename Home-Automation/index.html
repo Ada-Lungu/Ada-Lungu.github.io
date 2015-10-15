@@ -160,15 +160,6 @@
 <script>
 
 
-//    for (i=0; i<3; i++) {
-//        $('.page-header').append('<p class="numbers">'+ i +'</p>');
-//    }
-//
-//    $(document).on("click", ".numbers", function(){
-//        alert("Ada");
-//    });
-
-
     var house;
     var current_user;
     var timeOfDay = 0;
@@ -228,8 +219,8 @@
 
 
     function reloadHouse(username) {
-        if (username != 'default'){
-//            console.log(username);
+        if (username != 'default' && username != undefined){
+            console.log(username);
             house = JSON.parse(localStorage.getItem(username));
 //            console.log('x');
         }
