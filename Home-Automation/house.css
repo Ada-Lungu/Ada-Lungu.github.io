@@ -1,0 +1,487 @@
+
+
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://www.google.com/fonts#UsePlace:use/Collection:Balthazar');
+
+
+body {
+    font-family: "Helvetica Neue",sans-serif,"Open Sans", sans-serif, "Times New Roman", "Conv_AvenirLTStd-Book", Sans-Serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    /*background-color: #E8E8E8 !important;*/
+}
+
+
+/* PAGE HEADER*/
+
+.page-header {
+    /*font-size:20px;*/
+    color: #464b59;
+    background-color: #efefef;
+    height: 120px;
+    padding: 20px 0 0 100px;
+    border: 1px solid #d3d5d8;
+    margin-top: -5px;
+
+}
+
+.page-header h2{
+    font-family: "Raleway",sans-serif;"Helvetica Neue",sans-serif, "Open Sans",sans-serif;
+    font-weight: bold;
+}
+
+.page-header h2 .smalltitle {
+    font-size: 20px;
+    color: #b0b920;
+    font-family: "Open Sans",sans-serif, "Helvetica Neue",sans-serif,"Raleway",sans-serif;
+}
+
+
+/* MENU  */
+
+.login-section {
+    padding: 20px 0 0 100px;
+}
+
+.login-section #login, .login-section #sign-out, #sign-up, #auto-demo{
+    font-family:"Open Sans",sans-serif,"Raleway-SemiBold",sans-serif, "Helvetica Neue",sans-serif, "Conv_AvenirLTStd-Heavy",Sans-Serif;
+    font-weight: bold;
+    font-size:16px;
+    text-transform:uppercase;
+    margin: 0 0 60px 30px;
+    display: inline-block;
+    padding: 5px;
+}
+
+#sign-up {
+    color: slategrey;
+    border: 1px solid slategrey;
+    float: right;
+    margin: 20px 100px 0 0;
+}
+
+#sign-up:hover {
+    background-color: slategrey;
+    opacity: 0.8;
+    color: white;
+}
+
+#login {
+    color:#b0b920;
+    border: 1px solid #b0b920;
+
+}
+
+#login:hover {
+    background-color: #b0b920;
+    opacity: 0.8;
+    color: white;
+}
+
+
+#sign-out {
+    color:#b0b920;
+    border: 1px solid #b0b920;
+
+}
+
+#sign-out:hover {
+    background-color: #b0b920;
+    opacity: 0.8;
+    color: white;
+}
+
+
+#auto-demo {
+    border: 1px solid mediumseagreen;
+    color: mediumseagreen;
+    transition: all .3s;
+}
+
+#auto-demo:hover {
+    background-color: mediumseagreen;
+    opacity: 0.8;
+    color: white;
+}
+
+.login-section p {
+    font-family:"Open Sans",sans-serif,"Raleway-SemiBold",sans-serif, "Helvetica Neue",sans-serif, "Conv_AvenirLTStd-Heavy",Sans-Serif;
+    text-transform:capitalize;
+    font-weight: bold;
+    color: grey;
+    font-size:16px;
+    display: inline-block;
+}
+
+.login-section a:link {
+    text-decoration:none;
+    color: #707070;
+}
+
+.login-section a:visited{
+    color:#b0b920;
+}
+
+.login-section a:hover {
+    color:lawngreen;
+}
+
+.login-section #user-name {
+    text-align: center;
+    display: inline-block;
+}
+
+.login-section #lblName {
+    text-transform:uppercase;
+    margin-top: 5px;
+}
+
+/*SECTION HOUSE and BUTTONS*/
+
+.dayNightCycle {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: white;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.stayLighted {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+	opacity: 0.5;
+}
+
+.room {
+    background-repeat: no-repeat;
+}
+
+.darkRoom {
+	background-color: blue;
+	opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btnOnOff {
+	margin-top: 20px;
+}
+
+.roomName {
+	padding-top: 60px;
+}
+
+i.animate {
+    animation: ada 1s infinite;
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes ada {
+    0% {font-size: 40px;
+        /*color: black;*/
+    }
+    100% {font-size: 55px;
+        /*color: #ffff00;*/
+    }
+}
+
+@keyframes ada {
+    0% {font-size: 40px;
+        /*color: black;*/
+    }
+    100% {font-size: 55px;
+        /*color: #ffff00;*/
+    }
+}
+
+.lightBulb {
+    position: absolute;
+	font-size: 40px;
+	margin-left: 20px;
+}
+
+.lightBulbOn {
+	text-shadow: 0px 0px 20px #FFB90F;
+    color: #FFB90F;
+}
+
+.lightBulbOff {
+	text-shadow: 0px 0px 10px black;
+}
+
+
+#lightbulbID {
+	font-size: 100px;
+}
+
+.utility {
+    font-size: 40px;
+}
+
+.utilityOff {
+    color: black;
+}
+
+.fa-fire.utilityOn {
+    color: #ADBD20;
+}
+
+.fa-bolt.utilityOn {
+    color: #FFB90F;
+}
+
+.fa-tint.utilityOn {
+    color:#20ACCC;
+}
+
+/*BUTTON-PANEL*/
+
+.button-panel {
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    background-color: #efefef;
+    color: #464b59;
+    top: 0;
+    right: -400px;
+    transition: all .3s;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-left: 1px solid #d3d5d8;
+    margin-top: -20px;
+}
+
+.button-panel > div {
+    margin-left: 30px;
+}
+
+
+.button-panel h3  {
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 90px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #b0b920;
+    background-color: #464b59;
+    color: white;
+}
+
+.btnUtilities {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.fa.fa-times {
+    float: right;
+    font-size: 18px;
+    margin: 30px 10px 0 0;
+    color: white;
+}
+
+/*GENERAL COUNTERS*/
+
+.general_counter {
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+#controlPanel {
+    /*clear: left;*/
+    float: left;
+    left: 100px;
+    position: relative;
+    width: 600px;
+	height: 100px;
+	/*margin-top: 10    0px;*/
+}
+
+#counterPanel .general-counter, #clock, #clockImage {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#clock {
+    color: #14fb19;
+	font-family: 'Arial' sans-serif;
+	font-size: 22px;
+	height: 20px;
+    margin: 20px 0 0 10px;
+}
+
+#clockImage {
+    margin-top: -10px;
+}
+
+
+.general_counter .fa {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.slide-active {
+    right: 0px;
+}
+
+
+/*POP-UP MENU*/
+
+.modal-content {
+    background-color:#E8E8E8 ;
+}
+
+.modal-header, .modal-footer {
+    background-color:#b0b920;
+
+}
+
+.modal-body .inputPopup {
+    display: block;
+    width: 200px;
+    margin: 0px auto 20px;
+}
+
+.inputPopup input {
+    width: 230px;
+}
+
+.modal-body label#firstName {
+    margin-top: 40px;
+}
+
+.modal-footer .btn {
+    margin-right: 60px;
+}
+
+.inputPopup label, .inputPopup input {
+    display: inline-block;
+}
+
+.inputPopup #password {
+    margin-bottom: 60px;
+}
+
+
+.inputPopup label {
+    font-weight: normal;
+}
+
+
+/*STATISTICS REPRESENTATION*/
+
+.dial {
+    /*width: 150px;*/
+    height: 100px;
+}
+
+#electricity-dial {
+    position: absolute;
+    right: 480px;
+    top: 300px;
+    color: red;
+}
+
+#water-dial {
+    position: absolute;
+    right: 480px;
+    top: 500px;
+    /*color: #FF0000;*/
+}
+
+#gas-dial {
+    position: absolute;
+    right: 480px;
+    top: 700px;
+}
+
+
+#roadImage {
+    width: 100vw;
+    height: 190px;
+    position: relative;
+    top: 1050px;
+    background: url("http://i.imgur.com/jNvvXRU.jpg");
+    opacity: 0.9;
+}
+
+#green-car1 {
+    /*width: 100px;*/
+    /*height: 100px;*/
+    position: absolute;
+    left:560px;
+    top: 840px;
+}
+
+#tree-artistic {
+    position: absolute;
+    left:0px;
+    top: 840px;
+}
+
+#tree1 {
+    position: absolute;
+    left:120px;
+    top: 900px;
+}
+
+#tree2 {
+    position: absolute;
+    left:240px;
+    top: 980px;
+}
+
+#tree3 {
+    position: absolute;
+    left:0px;
+    top: 980px;
+}
+
+#tree4 {
+    position: absolute;
+    right:0px;
+    top: 980px;
+}
+
+#tree5 {
+    position: absolute;
+    right:240px;
+    top: 980px;
+}
+
+#tree6 {
+    position: absolute;
+    right:130px;
+    top: 900px;
+}
+
+#green-car2 {
+   position: absolute;
+   width: 300px;
+   height:300px;
+   /*background-image: url("http://www.h2it.org/wp-content/uploads/2013/04/incentivi-veicoli-verdi.png");*/
+   transition: all 3s;
+   left: 0;
+}
+
+
